@@ -1,8 +1,14 @@
-# React + Vite
+# iPhone Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a responsive web application built with React.js that replicates the design and functionality of the iPhone interface. Utilizing Tailwind CSS for styling and Vite for fast performance, this site delivers an engaging user experience featuring various images and videos of the iPhone.
 
-Currently, two official plugins are available:
+## Features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Responsive Design: 
+Seamlessly adapts to various screen sizes for an optimal viewing experience.
+
+### Modern UI: 
+Inspired by Apple's design principles, utilizing Tailwind CSS for a clean and minimalist look.
+
+### High-Performance: 
+Vite provides fast loading times and a smooth development experience with hot module replacement.
