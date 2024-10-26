@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/adilisani1/iPhone-website/refs/heads/master/titanium.png" >
+
 # iPhone Website
 
 This project is a responsive web application built with React.js that replicates the design and functionality of the iPhone interface. Utilizing Tailwind CSS for styling and Vite for fast performance, this site delivers an engaging user experience featuring various images and videos of the iPhone.
