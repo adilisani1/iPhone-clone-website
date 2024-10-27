@@ -52,7 +52,7 @@ const Hero = () => {
         <p className=" text-gray text-xl font-semibold">
           From $999 or $41.62/mo. for 24 mo.1
         </p>
-        <p className=" text-gray text-xl font-normal">
+        <p className=" text-gray text-md font-normal">
           Apple Intelligence coming this fall2
         </p>
       </div>
