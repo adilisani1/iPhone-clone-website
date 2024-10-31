@@ -1,6 +1,8 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { watchImg } from './../utils/index';
+import VideoCarousel from "./VideoCarousel";
+import VideoCarouselPractice from "./VideoCarouselPractice";
 
 const Highlights = () => {
 
@@ -13,6 +15,7 @@ const Highlights = () => {
     <section id="highlights" className="w-screen overflow-hidden h-full common-padding bg-zinc ">
 
       <div className=" screen-max-width">
+
         <div className="mb-12 md:flex w-full items-end  justify-between h-full">
           <h1 id="title" className=" section-heading ">Get the highlights.</h1>
           <div className="flex flex-wrap items-end gap-5">
@@ -23,7 +26,8 @@ const Highlights = () => {
             </p>
           </div>
         </div>
-
+        <VideoCarousel />
+        {/* <VideoCarouselPractice /> */}
       </div>
 
     </section>
