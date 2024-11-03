@@ -183,6 +183,7 @@ const VideoCarousel = () => {
                                     playsInline={true}
                                     preload="auto"
                                     muted
+                                    className={`${list.id === 2 && 'translate-x-44 pointer-events-none'}`}
                                     ref={(el) => (videoRef.current[i] = el)}
                                     onEnded={() =>
                                         i !== 3
@@ -200,12 +201,13 @@ const VideoCarousel = () => {
                                 </video>
                             </div>
 
-                            <div className=" absolute top-12 left-[5%] z-10">
-                                {list.textLists.map((text) => (
-                                    <p key={text} className=" hiw-text">{text}</p>
+                            <div className="absolute top-12 left-[5%] z-10">
+                                {list.textLists.map((text, i) => (
+                                    <p key={i} className="md:text-2xl text-xl font-medium">
+                                        {text}
+                                    </p>
                                 ))}
                             </div>
-
 
                         </div>
                     </div>
