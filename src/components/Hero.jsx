@@ -40,6 +40,7 @@ const Hero = () => {
 
       <div className=" h-5/6 w-full flex-center flex-col">
         <p id="hero" className=" hero-title">iPhone 16 Pro</p>
+        {/* <span className="  text-center font-semibold text-2xl text-gray-100 max-md:mb-10">Made by @muhammadaadil</span> */}
         <div className=" md:w-10/12 w-9/12">
           <video className=" pointer-events-none" autoPlay muted playsInline={true} key={videoSrc}>
             <source src={videoSrc} />

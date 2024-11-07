@@ -1,13 +1,15 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import ModelView from './ModelView';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { yellowImg } from '../utils';
 
 import * as THREE from 'three'
 import { Canvas } from '@react-three/fiber';
 import { View } from '@react-three/drei';
 import { models, sizes } from '../constant';
+import { animateWithGsapTimeline } from '../utils/animations';
+
 const Model = () => {
 
     const [size, setSize] = useState('small');
@@ -30,6 +32,37 @@ const Model = () => {
     const [smallRotation, setSmallRotation] = useState(0);
     const [largeRotation, setLargeRotation] = useState(0);
 
+    const tl = gsap.timeline();
+
+    useEffect(() => {
+
+        if (size === 'large') {
+            animateWithGsapTimeline(
+                tl,
+                small,
+                smallRotation,
+                '#view1',
+                '#view2', {
+                duration: 2,
+                transform: `translateX(-100%)`
+
+            }
+            )
+        }
+        if (size === 'small') {
+            animateWithGsapTimeline(
+                tl,
+                large,
+                largeRotation,
+                '#view2',
+                '#view1', {
+                duration: 2,
+                transform: `translateX(0)`
+
+            }
+            )
+        }
+    }, [size])
 
     useGSAP(() => {
         gsap.to('#heading', {
