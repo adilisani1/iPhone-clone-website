@@ -37,6 +37,7 @@ const Model = () => {
     useEffect(() => {
 
         if (size === 'large') {
+
             animateWithGsapTimeline(
                 tl,
                 small,
