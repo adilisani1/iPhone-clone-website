@@ -8,6 +8,7 @@ function Model(props) {
 
     const texture = useTexture(props.item.img);
 
+
     useEffect(() => {
         Object.entries(materials).map((material) => {
             if (
@@ -244,8 +245,10 @@ function Model(props) {
                 scale={0.01}
             />
         </group>
+
     )
 }
 
 export default Model;
 useGLTF.preload('/models/scene.glb')
+
